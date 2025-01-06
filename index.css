@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn-base {
+    @apply flex items-center justify-center text-lg font-semibold rounded-lg p-3 transition-all duration-150 active:scale-95;
+  }
+
+  .btn-num {
+    @apply btn-base bg-gray-700 text-white hover:bg-gray-600;
+  }
+
+  .btn-op {
+    @apply btn-base bg-orange-500 text-white hover:bg-orange-400;
+  }
+
+  .btn-sci {
+    @apply btn-base bg-gray-600 text-white hover:bg-gray-500;
+  }
+
+  .btn-red {
+    @apply btn-base bg-red-500 text-white hover:bg-red-400;
+  }
+
+  .btn-equals {
+    @apply btn-base bg-green-500 text-white hover:bg-green-400;
+  }
+}
